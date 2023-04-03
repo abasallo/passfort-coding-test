@@ -5,6 +5,7 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 
 import index from './express/routes'
+import documents from './express/routes/documents'
 
 import { errorMiddleware } from './express/errors'
 
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use('/', index)
+app.use('/documents', documents)
 
 app.use(errorMiddleware)
 
