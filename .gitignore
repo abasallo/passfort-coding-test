@@ -1,0 +1,12 @@
+build/
+node_modules/
+lib/
+coverage/
+
+**/*.sqlite
+
+**/.DS_Store
+
+.idea/
+
+.env
