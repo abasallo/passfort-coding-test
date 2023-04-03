@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server E2E tests Documents E2E tests Add Review 1`] = `
+{
+  "content": "New Content",
+  "documentId": 3,
+  "id": Any<Number>,
+  "timestamp": Any<String>,
+}
+`;
+
+exports[`Server E2E tests Documents E2E tests Find All Documents 1`] = `
+[
+  {
+    "id": 1,
+    "title": "title-1",
+  },
+  {
+    "id": 2,
+    "title": "title-2",
+  },
+  {
+    "id": 3,
+    "title": "title-3",
+  },
+]
+`;
+
+exports[`Server E2E tests Documents E2E tests Find Document by title 1`] = `
+[
+  {
+    "content": "text-1",
+    "documentId": 1,
+    "id": 1,
+    "timestamp": "2023-01-01T00:00:00",
+  },
+]
+`;
+
+exports[`Server E2E tests Documents E2E tests Find Review by title and timestamp 1`] = `
+{
+  "content": "text-2-update-1",
+  "documentId": 2,
+  "id": 3,
+  "timestamp": "2023-01-01T00:00:00",
+}
+`;
+
+exports[`Server E2E tests Documents E2E tests Latest Review by title 1`] = `
+{
+  "content": "text-3-update-2",
+  "documentId": 3,
+  "id": 6,
+  "timestamp": "2023-01-01T00:00:00",
+}
+`;
+
+exports[`Server E2E tests Health Check E2E tests Expected response for Health Check 1`] = `"OK"`;
