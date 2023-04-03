@@ -9,7 +9,7 @@
     "start": "tsc && node build/server.js",
     "debug": "tsc && node --inspect-brk build/server.js",
     "build": "tsc",
-    "test": "jest ./src",
+    "test": "jest --runInBand ./src",
     "e2e": "jest ./e2e"
   },
   "dependencies": {
